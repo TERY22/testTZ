@@ -1,0 +1,177 @@
+
+
+.header {
+   max-width: 1440px;
+   margin: 0 auto;
+   margin-bottom: 70px;
+   box-shadow: -6px 0px 30px 0px rgba(0, 23, 0, 0.45);
+   font-family: $OS, sans-serif;
+   &__info{
+      background-color: #FED600;
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+   }
+   &__info-body {
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+   }
+   &__info-phone {
+      margin-right: 20px;
+   }
+   &__info-feadback{
+      margin-right: 36px;
+   }
+   &__func {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 73px;
+      margin-bottom: 13px;
+   }
+
+   &__logo {
+      width: 213px;
+   }
+
+   &__input {
+      width: 521px;
+      height: 44px;
+      border: 1px solid #BDBDBD;
+      padding: 4px;
+      border-radius: 4px;
+      input {
+         padding: 16px 13px;
+         height: 44px;
+         font-size: 13px;
+         font-weight: 600;
+         border: none;
+         outline: none;
+         width: 441px;
+         vertical-align: middle;
+         font-weight: 600;
+      }
+      input[type="button"] {
+         border-radius: 4px;
+         background: transparent;
+         border: 3px solid $red;
+         padding: 0;
+         font-size: 13px;
+         color: $red;
+         line-height: 17px;
+         text-align: center;
+         width: 75px;
+         cursor: pointer;
+      }
+   }
+   &__login {
+      width: 73px;
+      height: 24px;
+      margin-left: 15px;
+      position: relative;
+      padding-left: 30px;
+      font-size: 13px;
+      cursor: pointer;
+      &::before {
+         content: "";
+         position: absolute;
+         background-image: url('../img/login.svg');
+         width: 22px;
+         height: 22px;
+         left: 0;
+         top: -4px;
+      }
+   }
+
+   &__rating {
+      width: 105px;
+      vertical-align: middle;
+   }
+
+   &__cart {
+      width: 160px;
+      &-btn {
+         font-size: 13px;
+         cursor: pointer;
+         border-radius: 4px;
+         text-align: center;
+         background-color: $red;
+         color: #fff;
+         position: relative;
+         padding-left: 16px;
+         width: 160px;
+         height: 36px;
+         border: none;
+         &::before {
+            content: '';
+            position: absolute;
+            background-image: url('../img/cart.svg');
+            width: 22px;
+            height: 22px;
+            left: 8px;
+            top: 4px;
+         }
+      }
+   }
+}
+
+.menu {
+   margin-bottom: 43px;
+   font-weight: 400;
+   &__list {
+      display: flex;
+      justify-content: space-between;
+   }
+}
+
+.works {
+   padding-bottom: 21px;
+   font-weight: 700;
+   &__list {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 700;
+   }
+   &__link {
+      position: relative;
+      cursor: pointer;
+   }
+   &__link span {
+      position: absolute;
+      height: 1px;
+      width: 10px;
+      background-color: rgba(141, 138, 138, 0.8);
+      top: 12px;
+      transform: rotate(135deg);
+      right: -17px;
+      &::after {
+         content: "";
+         height: 1px;
+         width: 10px;
+         background-color: #ccc;
+         top: 5px;
+         left: 5px;
+         position: absolute;
+         transform: rotate(-90deg);
+      }
+   }
+}
+
+.social__link + .social__link {
+   margin-left: 20px;
+}
+
+.right, .left {
+   display: flex;
+}
+
+#citys {
+   margin-right: 26px;
+   border: none;
+   background: transparent;
+   font-weight: inherit;
+}
